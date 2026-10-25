@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-OTelProbe — OwlSec security tool
+
+OTelProbe is a Telnet security audit suite for credential auditing, banner grabbing, CVE checks and interactive command execution. It uses a raw-socket Telnet implementation with a full IAC/option-negotiation engine (replacing the deprecated telnetlib), supports combo-list and multi-user audit modes, and rate-limits attempts. Found credentials and CVE results can be exported to TXT, JSON or CSV, and remote targets require explicit authorization.
 
 ---
 
 ## ✨ Features
 
-- OTelProbe — OwlSec security tool
+
+- Multi-threaded credential auditing with combo-list and multi-user modes
+- Raw-socket Telnet with a full IAC / option-negotiation engine (no deprecated telnetlib)
+- Banner grabber and service fingerprinting
+- CVE vulnerability checks with a scan-all runner
+- Interactive terminal with command history and a port-probe utility
+- Rate limiting, stop-on-first-hit and TXT/JSON/CSV export; remote targets require authorization confirm
 
 ---
 
@@ -37,8 +44,12 @@ OTelProbe — OwlSec security tool
 
 ## 🚀 Usage
 
+
 ```bash
 ./OTelProbe
+./OTelProbe --probe-local
+./OTelProbe --version
+./OTelProbe --help
 ```
 
 ---
